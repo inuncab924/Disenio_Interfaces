@@ -1,0 +1,29 @@
+/* 1. Todos los párrafos dentro de .container tienen texto azul */
+.container p {
+    color: blue;
+}
+
+/* 2. Solo el <h2> dentro de .container es rojo, no el que está dentro de <section> */
+.container > h2 {
+    color: red;
+}
+
+/* 3. El primer <p> que sigue a un <h2> es verde */
+h2 + p {
+    color: green;
+}
+
+/* 4. Todos los párrafos después de .intro tienen un fondo amarillo */
+.intro ~ p {
+    background-color: yellow;
+}
+
+/* 5. Margen inferior de 10px para <h2> y .intro */
+h2, .intro {
+    margin-bottom: 10px;
+}
+
+/* 6. Cualquier <p> dentro de .container que también tenga la clase .intro tiene un fondo gris */
+.container p.intro {
+    background-color: grey;
+}
