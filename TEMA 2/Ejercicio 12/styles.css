@@ -1,0 +1,55 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* 1. Estilo para el título principal (h1) */
+h1 {
+    color: #333333; /* Cambia el color del título */
+    font-size: 32px; /* Define el tamaño del título en píxeles */
+    text-align: center; /* Centra el título */
+    text-transform: uppercase; /* Aplica mayúsculas al texto del título */
+}
+
+/* 2. Estilo para el subtítulo (h2) */
+h2 {
+    font-size: 25px; /* Reduce el tamaño en comparación con el h1 */
+    color: #444444; /* Cambia el color del subtítulo */
+    letter-spacing: 2px; /* Ajusta el espaciado entre letras */
+    text-decoration: underline; /* Añade una línea inferior, superior o de otro tipo */
+}
+
+/* 3. Estilo para el párrafo (p) */
+p {
+    font-size: 16px; /* Aplica un tamaño de fuente cómodo para leer */
+    color: #666666; /* Cambia el color del texto */
+    text-align:justify; /* Justifica el texto para mejorar su presentación */
+    text-indent: 30px; /* Indenta la primera línea del párrafo */
+}
+
+/* 4. Estilo para el bloque de cita (blockquote) */
+blockquote {
+    font-style: italic; /* Aplica estilo en cursiva */
+    color: #444444; /* Cambia el color del bloque de cita */
+    background-color: #f0f8ff; /* Usa un color de fondo suave para resaltarlo */
+    padding: 10px; /* Añade espacio alrededor del texto */
+    border-left: 3px solid rgb(255,156,110); /* Añade una línea de color a la izquierda para destacar */
+}
+
+
+
+/*
+¿Como cambia la apariencia del texto cuando aplicas diferentes colores y tamaños?
+
+Cuando cambio el color y el tamaño del texto, el impacto visual varía.
+El tamaño puede hacer que el texto sea más fácil de leer o que atraiga más atención, 
+mientras que el color puede dar una sensación de seriedad o energía.
+
+
+¿Que combinacion de propiedades y colores te parece mas profesional o atractiva?
+Creo que una combinación de texto oscuro sobre fondo claro con un tamaño adecuado es lo más profesional y atractivo.
+Para los títulos, un color sutil pero destacado, como un azul oscuro, puede darle un toque elegante sin ser demasiado 
+llamativo.
+
+*/

@@ -1,0 +1,60 @@
+/*
+Crea un archivo CSS llamado styles.css. Sigue las instrucciones de estilo para aplicar a cada lista en tu archivo styles.css:
+
+1. Lista ordenada de tareas (ol.tareas):
+Usa el estilo list-style-type con valores como decimal-leading-zero.
+Ajusta la posición de la lista usando list-style-position para que las marcas de lista queden dentro del texto.
+Cambia el color del texto de los elementos de la lista a un tono azul oscuro, como #003366.
+
+2. Lista no ordenada de materiales (ul.materiales):
+Cambia el tipo de lista con list-style-type usando un estilo square.
+Aplica list-style-position para que las marcas queden fuera del texto.
+Cambia el color del texto a un tono verde oscuro, como #2a7a1f.
+
+3. Lista personalizada de recursos de estudio (ul.recursos):
+Usa una imagen personalizada para los elementos de la lista mediante list-style-image. Puedes usar una imagen, como un pequeño ícono de libro o una estrella.
+Ajusta la posición de la lista usando list-style-position de manera que las marcas de lista queden dentro del texto.
+Cambia el color del texto a un tono gris oscuro, como #444444.
+*/
+/* 1. Lista ordenada de tareas (ol.tareas) */
+ol.tareas {
+    list-style-type: decimal-leading-zero; /* Números con ceros a la izquierda */
+    list-style-position: inside; /* Marcas de lista dentro del texto */
+    color: #003366; /* Color azul oscuro */
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* 2. Lista no ordenada de materiales (ul.materiales) */
+ul.materiales {
+    list-style-type: square; /* Estilo de viñetas cuadradas */
+    list-style-position: outside; /* Marcas de lista fuera del texto */
+    color: #2a7a1f; /* Color verde oscuro */
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* 3. Lista personalizada de recursos de estudio (ul.recursos) */
+ul.recursos {
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    list-style-position: inside; /* Marcas de lista dentro del texto */
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+ul.recursos li {
+    position: relative;
+    padding-left: 30px; /* Añade espacio para las viñetas personalizadas */
+    color: #444444; /* Color gris oscuro */
+}
+
+ul.recursos li::before {
+    content: url('https://img.freepik.com/vector-gratis/pila-muchos-libros_1308-30874.jpg?t=st=1731670124~exp=1731673724~hmac=ff290abe476564ab5dd9b8637d5d40edbafc1b6aee7f5887975089550119ea01&w=360'); /* Imagen personalizada (puedes cambiar la URL por otra imagen) */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
