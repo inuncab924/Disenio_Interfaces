@@ -1,0 +1,16 @@
+.uno {
+  margin: 20px;
+  background-color: blue;
+}
+
+.dos {
+  margin: 10px 20px 30px 40px;
+  background-color: pink;
+}
+
+.tres {
+  margin-top: 50px;  
+  margin: auto;
+  background-color: aqua;
+  width: 50%;
+}

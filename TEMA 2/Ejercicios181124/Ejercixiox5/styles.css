@@ -1,0 +1,18 @@
+.uno {
+  width: 200px;
+  height: 150px;
+  background-color: lightblue;
+}
+
+.dos {
+  width: 50%;
+  height: 100px;
+  background-color: lightgreen;
+}
+
+.tres {
+  width: 300px;
+  min-height: 100px;
+  max-height: 200px;
+  background-color: lightcoral;
+}

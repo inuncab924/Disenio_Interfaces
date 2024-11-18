@@ -1,0 +1,21 @@
+.uno {
+  padding: 20px;
+  background-color: aqua;
+}
+
+.dos {
+  padding: 10px 15px 20px 25px;
+  background-color: yellowgreen ;
+}
+
+.tres {
+  padding: 30px 50px;
+  background-color: blue;
+  align-content: center;
+
+}
+
+#boton{
+  color: aqua;
+  background: #000;
+}

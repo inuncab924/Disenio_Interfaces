@@ -1,0 +1,19 @@
+.uno{
+    border: dotted 3px blue ;
+    margin: 20px;
+    padding: 10px;
+}
+
+.dos {
+    border: 5px solid green; 
+    border-top: 5px solid green; 
+    border-right: 10px solid green;
+    border-left: 20px solid green; 
+    border-bottom: 15px solid green; 
+}
+
+.tres{
+    border-radius: 15px;
+    border: double;
+    color: red;
+}
