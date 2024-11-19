@@ -1,0 +1,34 @@
+/* Estilos generales para los cuadros */
+
+
+.seccion {
+    width: 80%;
+    height: 100px;
+    margin: 20px ;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    
+}
+
+p{
+    text-align: center
+}
+
+/* Primera sección - Estilo de contorno */
+.primera {
+    outline: 4px solid blue; /* Contorno sólido y de color azul */
+    outline-style: solid; /* El estilo de contorno es sólido */
+}
+
+/* Segunda sección - Ancho de contorno */
+.segunda {
+    outline: 5px dashed green; /* Contorno de 5px y estilo dashed (a rayas) */
+    outline-color: green; /* Color verde */
+}
+
+/* Tercera sección - Desplazamiento de contorno */
+.tercera {
+    outline: 3px dotted red; /* Contorno de 3px y estilo dotted (puntos) */
+    outline-offset: 10px; /* Desplazamiento del contorno de 10px */
+    outline-color: red; 
+}

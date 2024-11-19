@@ -1,0 +1,13 @@
+#lorem{
+    background-color: grey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+/*
+Calculo del ancho del div
+300 + (15 x 2) + (50 x 2) = 430Px si hubiera altura tambien es x2
+*/
