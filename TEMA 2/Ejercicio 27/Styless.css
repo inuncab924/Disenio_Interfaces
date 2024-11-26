@@ -1,0 +1,21 @@
+div, footer, header{
+    background-color: blue ;
+    border: 2px solid black;
+
+}
+
+div{
+    float: right;
+    background-color: #25e308;
+    width: 20%;
+}
+
+footer{
+    clear: both;
+}
+
+
+/* PREGUNTAS
+
+
+*/
