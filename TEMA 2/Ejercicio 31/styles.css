@@ -1,0 +1,33 @@
+
+
+a:link{
+  color: aqua;
+}
+
+a:visited{
+color: green;
+}
+
+a:hover{
+  color: yellow;
+}
+
+
+a :active{
+  color: blueviolet;
+}
+
+a:focus{
+  color: red;
+  
+}
+
+/* Dar apaiencia de boton sin ser un boton */
+a{
+  color: chartreuse;
+  padding: 20px;
+  background-color: aqua;
+  border-radius: 20px solid red;
+  border-radius: 20px;
+
+}
