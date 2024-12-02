@@ -1,0 +1,55 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    color: blue;
+  }
+  
+  .parent {
+    font-family: 'Courier New', monospace;
+    color: red;
+  }
+  
+  .default {
+    font-family: Verdana, sans-serif;
+    color: green;
+  }
+  
+  .inherit {
+    font-family: inherit;
+    color: inherit;
+  }
+  
+  .initial {
+    font-family: initial;
+    color: initial;
+  }
+  
+  .unset {
+    font-family: unset;
+    color: unset;
+  }
+  
+  .revert {
+    font-family: revert;
+    color: revert;
+  }
+  
+
+/*
+¿Que estilo toma el texto sin inherit? ¿Por que?
+Azul porque el body que es el padre asi esta definido
+
+
+¿Como se comporta el texto con initial? ¿Que significa este valor?
+No hereda los atributos del body, en este caso el color, significa que no hereda los atributos del css y tiene aspecto por defecto
+
+
+¿Que sucede con unset? ¿Es diferente para porpiedades heredables y no heredables?
+Resetear, coge el estilo por defecto
+
+actúa como inherit para propiedades heredables y como initial para propiedades no heredables, restableciendo el valor adecuado según el tipo de propiedad.
+
+¿Como actua revert en comparacion con los otros valores? 
+propiedad a lo que tendría en un nivel superior de la cascada de estilos, mientras que inherit, initial y unset modifican la herencia o el valor predeterminado de la propiedad.
+
+*/
