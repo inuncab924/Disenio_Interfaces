@@ -1,0 +1,104 @@
+/* 1. Organizar la estructura de arriba hacia abajo */
+
+/* Reglas generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 4. Legibilidad */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 2. Nombrar correctamente los selectores */
+.site-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.site-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* 5. Combinar elementos */
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* 8. Utilizar nombres descriptivos en los selectores */
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* 6. Utilizar selectores descendientes */
+.content .description-text {
+    margin-bottom: 20px;
+}
+
+/* 7. Utilizar propiedades abreviadas */
+.cta-button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* 2. Nombrar correctamente los selectores */
+.cta-button:hover {
+    background-color: #005f73;
+}
+
+/* 12. Agregar los prefijos de los navegadores en propiedades que no sean estables */
+.cta-button {
+    -webkit-transition: background-color 0.3s ease; /* Prefijo para Safari */
+    -moz-transition: background-color 0.3s ease;    /* Prefijo para Firefox */
+}
+
+/* 9. Evitar utilizar como nombre de un selector una característica visual */
+.main-navigation {
+    font-size: 1.1rem;
+}
+
+/* 10. Probar el diseño en los diferentes navegadores */
+@media (max-width: 768px) {
+    .main-navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta-button {
+        width: 100%;
+    }
+}
+
+/* 11. Validar el código CSS */
+@media (min-width: 1024px) {
+    .site-title {
+        font-size: 2.5rem;
+    }
+
+    .main-navigation {
+        font-size: 1.3rem;
+    }
+}
