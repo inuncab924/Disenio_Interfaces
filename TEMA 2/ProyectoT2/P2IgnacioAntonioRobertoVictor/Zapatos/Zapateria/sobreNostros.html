@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" id="estilo" href="styles.css"> 
+    <title>Sobre Nosotros</title>
+</head>
+<body>
+    <header>
+        <img src="zapato.png" alt="Logo Zapato" class="logo">
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Contactanos</a>
+            <a href="#">Catalogo</a>
+        </nav>
+        <img src="carrito-de-compras (2).png" alt="Carrito de compras" class="cart-icon">
+    </header>
+
+    <button id="cambiarEstilo">Cambiar Estilo</button>  
+
+    <script>
+        const boton = document.getElementById('cambiarEstilo');
+        const enlaceEstilo = document.getElementById('estilo');
+
+        boton.addEventListener('click', function() {
+            // Cambia el href entre 'estilo1.css' y 'estilo2.css'
+            if (enlaceEstilo.getAttribute('href') === 'styles.css') {
+                enlaceEstilo.setAttribute('href', 'dark-mode.css');
+            } else {
+                enlaceEstilo.setAttribute('href', 'styles.css');
+            }
+        });
+    </script>
+
+    <div class="container">
+        <h1>SOBRE NOSOTROS</h1>
+
+        <div class="content-box">
+            <h2>¿Quienes somos?</h2>
+            <p>Somos 4 chicos jóvenes en etapa de estudio que queremos comenzar este pequeño negocio, en busca de satisfacer las necesidades de nuestra pequeña localidad.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>¿Cómo empezamos?</h2>
+            <p>La zapatería se creó en una pequeña localidad con el motivo de atender la creciente demanda de calzado accesible y de calidad. Se identificó una falta de opciones locales, lo que nos impulsó a establecer un negocio que ofreciera variedad y un servicio personalizado, contribuyendo así al desarrollo de la comunidad.</p>
+        </div>
+
+        <div class="content-box">
+            <h2>¿Cual es nuestro objetivo?</h2>
+            <p>El objetivo de nuestra zapatería es ofrecer una amplia variedad de calzado que se adapte a las necesidades y gustos de los clientes, brindando calidad y comodidad. Además, busca proporcionar un excelente servicio al cliente para fomentar la lealtad y satisfacción. Por último, se aspira también a mantener precios accesibles utilizando las tendencias del mercado para atraer a un público diverso.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Teléfono: +34 847291
+    </div>
+
+
+    
+
+</body>
+</html>
+
+</html>
+
+
+
+

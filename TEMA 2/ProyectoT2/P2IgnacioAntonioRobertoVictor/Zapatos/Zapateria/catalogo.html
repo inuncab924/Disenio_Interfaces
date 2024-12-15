@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Zapatos</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="original.css">
+        <!-- Botón de cambio de tema -->
+        <div style="text-align: center; margin: 10px;">
+            <button id="theme-toggle">Cambiar Estilo</button>
+        </div>
+
+        <script>
+            document.getElementById('theme-toggle').addEventListener('click', function() {
+                const currentTheme = document.getElementById('theme-stylesheet');
+                if (currentTheme.getAttribute('href') === 'original.css') {
+                    currentTheme.setAttribute('href', 'dark-modeV.css');
+                } else {
+                    currentTheme.setAttribute('href', 'original.css');
+                }
+            });
+        </script>    
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div><img src="imagenes/zapato.png" alt="Logo" width="40"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobreNostros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div><img src="imagenes/carrito-de-compras.png" alt="Carrito" width="40"></div> <!-- Carrito o ícono adicional -->
+    </header>
+
+    <!-- Título Principal -->
+    <h1>NUESTRO CATÁLOGO</h1>
+
+    <!-- Menú Desplegable -->
+    <div class="menu">
+        <select name="categoria" id="categoriaSelect">
+        <option value="hombre" selected>Hombre</option>
+        <option value="deportivo">Deportivo</option>
+        <option value="botas">Botas</option>
+        <option value="casual">Casual</option>
+        <option value="formal">Formal</option>
+        </select> 
+        
+        <select name="mujer" id="mujerSelect">
+            <option value="mujer">Mujer</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+        
+        <select name="niño" id="niñoSelect">
+            <option value="niño">Niño</option>
+            <option value="deportivo">Deportivo</option>
+            <option value="botas">Botas</option>
+            <option value="casual">Casual</option>
+            <option value="formal">Formal</option>
+        </select>
+    </div>
+    
+    <!-- Sección de Productos -->
+    <div class="catalogo">
+        <!-- Producto 1: Imagen a la izquierda y descripción a la derecha -->
+        <div class="producto">
+            <img src="imagenes/zoom.png" alt="Zapato Zoom">
+            <div class="producto-texto">
+                <h2>Zoom</h2>
+                <p>Las zapatillas Zoom son zapatillas deportivas diseñadas para la velocidad y la comodidad.</p>
+            </div>
+        </div>
+
+        <!-- Producto 2: Imagen a la derecha y descripción a la izquierda -->
+        <div class="producto reverse">
+            <img src="imagenes/kinetik.png" alt="Zapato Kinetik Fit">
+            <div class="producto-texto">
+                <h2>Kinetik Fit</h2>
+                <p>Las Kinetik Fit son zapatos deportivos diseñados con tecnología avanzada para ajustes precisos y una experiencia de alto rendimiento.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+

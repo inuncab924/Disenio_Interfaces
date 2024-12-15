@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapatería - Home</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="styles-light.css"> <!-- Hoja de estilo inicial (modo claro) -->
+</head>
+<body>
+    <header>
+        <h1>Zapatería</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Bienvenidos a nuestra Zapatería</h2>
+        <p>Ofrecemos una amplia variedad de zapatos para todas las ocasiones.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zapatería. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Botón para activar el modo oscuro -->
+    <button class="dark-mode-button" onclick="toggleDarkMode()">Activar Modo Oscuro</button>
+
+    <script>
+        function toggleDarkMode() {
+            const themeStylesheet = document.getElementById("theme-stylesheet");
+
+            // Cambiar entre el CSS del modo claro y oscuro
+            if (themeStylesheet.getAttribute("href") === "styles-light.css") {
+                themeStylesheet.setAttribute("href", "styles-dark.css");
+            } else {
+                themeStylesheet.setAttribute("href", "styles-light.css");
+            }
+        }
+    </script>
+</body>
+</html>
