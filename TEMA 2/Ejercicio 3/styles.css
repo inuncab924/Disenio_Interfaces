@@ -17,7 +17,9 @@ p {
     padding: 0%;
 }
 
-
+[type = "text"]{
+    border: 2px solid red
+}
 
 
   
