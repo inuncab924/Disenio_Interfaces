@@ -1,110 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zapatería - Contacto</title>
-
-
-    <!-- estilo responsivo -->
-    <style>
-
-        /* Estilos generales */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            padding: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 13%;
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Estilos pantallas más pequeñas */
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            main {
-                padding: 1rem;
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Estilos para móviles */
-        @media (max-width: 480px) {
-            header, footer {
-                padding: 0.5rem;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-
-            header h1 {
-                font-size: 1.5rem;
-            }
-
-            main {
-                padding: 0.5rem;
-                font-size: 0.8rem;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" id="estilo" href="styles.css">
+    <title>Contacto</title>
 </head>
+
 <body>
     <header>
-        <h1>Zapatería </h1>
+        <img src="zapato.png" alt="Logo Zapato" class="logo">
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catalogo.html">Catálogo</a></li>
-                <li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+            <a href="index.html">Inicio</a>
+            <a href="sobreNostros.html">Sobre Nosotros</a>
+            <a href="catalogo.html">Catalogo</a>
         </nav>
+        <img src="carrito-de-compras (2).png" alt="Carrito de compras" class="cart-icon">
     </header>
 
-    <main>
-        <h2>Contacto</h2>
-        <p>Para consultas, contáctanos a través de nuestro correo: <a href="mailto:info@zapateria.com">info@zapateria.com</a></p>
-    </main>
+    <button id="cambiarEstilo">Cambiar Estilo</button>
 
-    <footer>
-        <p>&copy; 2024 Zapatería Ejemplo. Todos los derechos reservados.</p>
-    </footer>
+    <script>
+        const boton = document.getElementById('cambiarEstilo');
+        const enlaceEstilo = document.getElementById('estilo');
+
+        boton.addEventListener('click', function () {
+            // Cambia el href entre 'estilo1.css' y 'estilo2.css'
+            if (enlaceEstilo.getAttribute('href') === 'stylesA.css') {
+                enlaceEstilo.setAttribute('href', 'dark-modeA.css');
+            } else {
+                enlaceEstilo.setAttribute('href', 'stylesA.css');
+            }
+        });
+    </script>
+
+    <div class="container">
+        <h1>Contacto</h1>
+
+        <div id="content-box">
+            <h2>Información</h2>
+            <p>Correo: zapateria1@gmail.com</p>
+            <p>Teléfono: +34847291</p>
+        </div>
+
+        <div id="content-box2">
+            <form method="POST">
+                <h2>Consulta</h2>
+                <p>Correo: </p>
+                <input type="text">
+                <p>Mensaje: </p>
+                <input type="text"><br><br><br>
+                <button>Enviar</button>
+            </form>
+            
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Teléfono: +34 847291
+    </div>
+
 </body>
+
 </html>
