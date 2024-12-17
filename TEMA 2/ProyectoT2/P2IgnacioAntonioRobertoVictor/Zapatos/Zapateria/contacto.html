@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="estilo" href="styles.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <img src="zapato.png" alt="Logo Zapato" class="logo">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobreNostros.html">Sobre Nosotros</a>
+            <a href="catalogo.html">Catalogo</a>
+        </nav>
+        <img src="carrito-de-compras (2).png" alt="Carrito de compras" class="cart-icon">
+    </header>
+
+    <button id="cambiarEstilo">Cambiar Estilo</button>
+
+    <script>
+        const boton = document.getElementById('cambiarEstilo');
+        const enlaceEstilo = document.getElementById('estilo');
+
+        boton.addEventListener('click', function () {
+            // Cambia el href entre 'estilo1.css' y 'estilo2.css'
+            if (enlaceEstilo.getAttribute('href') === 'stylesA.css') {
+                enlaceEstilo.setAttribute('href', 'dark-modeA.css');
+            } else {
+                enlaceEstilo.setAttribute('href', 'stylesA.css');
+            }
+        });
+    </script>
+
+    <div class="container">
+        <h1>Contacto</h1>
+
+        <div id="content-box">
+            <h2>Información</h2>
+            <p>Correo: zapateria1@gmail.com</p>
+            <p>Teléfono: +34847291</p>
+        </div>
+
+        <div id="content-box2">
+            <form method="POST">
+                <h2>Consulta</h2>
+                <p>Correo: </p>
+                <input type="text">
+                <p>Mensaje: </p>
+                <input type="text"><br><br><br>
+                <button>Enviar</button>
+            </form>
+            
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Teléfono: +34 847291
+    </div>
+
+</body>
+
+</html>
