@@ -1,0 +1,68 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas:
+        "img1 img2 img3"
+        "img4 img4 img4"
+        "img5 img6 img7";
+    width: 100%;
+    max-width: 1200px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+/* Estilos para pantallas grandes (≥ 1024px) */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .gallery img:nth-child(4) {
+        grid-column: span 3; /* Imagen destacada abarca 3 columnas */
+    }
+}
+
+/* Estilos para pantallas medianas (768px - 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .gallery img:nth-child(4) {
+        grid-column: span 2; /* Imagen destacada abarca 2 columnas */
+    }
+}
+
+/* Estilos para pantallas pequeñas (≤ 767px) */
+@media (max-width: 767px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .gallery img:nth-child(4) {
+        grid-column: span 1; /* Imagen destacada ocupa solo 1 columna */
+    }
+}
